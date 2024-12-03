@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ会员中心</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/vip.css">
+    <style>
+        body {
+            background: url('../imgs/1 (2).png') no-repeat center center fixed; /* 设置背景为1 (2).png */
+            background-size: cover;
+            overflow: hidden; /* 防止滚动条出现 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../imgs/new-logo.png" alt="QQ Logo" width="32" height="32">
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">首页</a>
+                <a href="../pages/download.html">下载</a>
+                <a href="../pages/wallpaper.html">壁纸中心</a>
+                <a href="../pages/themes.html">主题商店</a>
+                <a href="../pages/emojis.html">表情商店</a>
+            </div>
+            <div class="user-links">
+                <a href="vip.html" class="active">QQ会员</a>
+                <a href="security.html">QQ安全</a>
+                <a href="login.html" class="login-btn">登录</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1 class="fade-in">QQ会员特权</h1>
+            <div class="vip-cards">
+                <div class="vip-card">
+                    <h3>月费会员</h3>
+                    <div class="price">￥10</div>
+                    <ul class="features">
+                        <li>专属头像框</li>
+                        <li>个性气泡</li>
+                        <li>会员表情</li>
+                    </ul>
+                    <a href="#" class="buy-btn" onclick="showPayment('month')">立即开通</a>
+                </div>
+                <div class="vip-card premium">
+                    <h3>年费会员</h3>
+                    <div class="price">￥108</div>
+                    <ul class="features">
+                        <li>所有月费特权</li>
+                        <li>超级会员特效</li>
+                        <li>年费专属礼包</li>
+                        <li>节省20%</li>
+                    </ul>
+                    <a href="#" class="buy-btn" onclick="showPayment('year')">立即开通</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <img id="paymentQR" src="" alt="二维码">
+            <div class="modal-text">扫码添加好友，开启您的专属会员之旅</div>
+        </div>
+    </div>
+
+    <script>
+        function showPayment(type) {
+            const modal = document.getElementById('paymentModal');
+            const qrCode = document.getElementById('paymentQR');
+            qrCode.src = type === 'month' ? '../imgs/shoukuan.jpg' : '../imgs/haoyou.jpg';
+            modal.style.display = 'flex';
+            modal.onclick = function() {
+                modal.style.display = 'none';
+            };
+        }
+    </script>
+</body>
+</html> 

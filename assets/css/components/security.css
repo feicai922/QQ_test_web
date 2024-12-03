@@ -1,0 +1,46 @@
+.security-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.security-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.security-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.security-card h3 {
+    margin: 15px 0;
+}
+
+.security-card p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.security-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00a1d6;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.security-btn:hover {
+    transform: translateY(-2px);
+    background: #0088b3;
+} 

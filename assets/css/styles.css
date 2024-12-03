@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: url('../../imgs/1.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.nav-links a, .user-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.nav-links a:hover, .user-links a:hover {
+    opacity: 1;
+}
+
+.nav-links a.active {
+    opacity: 1;
+}
+
+.login-btn {
+    padding: 6px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.version-number {
+    font-size: 120px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.download-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.download-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+                     0 0 30px rgba(255, 255, 255, 0.6);
+    }
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.download-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+.download-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.download-card h3 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+.download-card p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.download-card .download-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00a1d6;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.download-card .download-btn:hover {
+    background: #0088b3;
+} 

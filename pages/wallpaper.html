@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ壁纸中心</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        body {
+            background: url('../imgs/1 (2).png') no-repeat center center fixed; /* 设置背景为1 (2).png */
+            background-size: cover;
+            overflow: hidden; /* 防止滚动条出现 */
+        }
+        .wallpaper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .wallpaper-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .wallpaper-card:hover {
+            transform: translateY(-5px);
+        }
+        .wallpaper-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .wallpaper-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .wallpaper-card:hover .wallpaper-overlay {
+            opacity: 1;
+        }
+        .download-btn {
+            background: #00a1d6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../imgs/new-logo.png" alt="QQ Logo" width="32" height="32">
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">首页</a>
+                <a href="../pages/download.html">下载</a>
+                <a href="wallpaper.html" class="active">壁纸中心</a>
+                <a href="../pages/themes.html">主题商店</a>
+                <a href="../pages/emojis.html">表情商店</a>
+            </div>
+            <div class="user-links">
+                <a href="../pages/vip.html">QQ会员</a>
+                <a href="../pages/security.html">QQ安全</a>
+                <a href="../pages/login.html" class="login-btn">登录</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1 class="fade-in">精选壁纸</h1>
+            <div class="wallpaper-grid">
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-8old52.webp" alt="壁纸1">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸1</h3>
+                        <a href="../imgs/wallhaven-8old52.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-8orz32.webp" alt="壁纸2">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸2</h3>
+                        <a href="../imgs/wallhaven-8orz32.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-578pl1.webp" alt="壁纸3">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸3</h3>
+                        <a href="../imgs/wallhaven-578pl1.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-jx5pm5.webp" alt="壁纸4">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸4</h3>
+                        <a href="../imgs/wallhaven-jx5pm5.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-jxyopy.webp" alt="壁纸5">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸5</h3>
+                        <a href="../imgs/wallhaven-jxyopy.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-m953jy.webp" alt="壁纸6">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸6</h3>
+                        <a href="../imgs/wallhaven-m953jy.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-md5rx1.webp" alt="壁纸7">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸7</h3>
+                        <a href="../imgs/wallhaven-md5rx1.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-o3okm7.webp" alt="壁纸8">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸8</h3>
+                        <a href="../imgs/wallhaven-o3okm7.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-x8eydz.webp" alt="壁纸9">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸9</h3>
+                        <a href="../imgs/wallhaven-x8eydz.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-x8893d.webp" alt="壁纸10">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸10</h3>
+                        <a href="../imgs/wallhaven-x8893d.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-xlpx3z.webp" alt="壁纸11">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸11</h3>
+                        <a href="../imgs/wallhaven-xlpx3z.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../imgs/wallhaven-zyxe8j.webp" alt="壁纸12">
+                    <div class="wallpaper-overlay">
+                        <h3>壁纸12</h3>
+                        <a href="../imgs/wallhaven-zyxe8j.webp" download class="download-btn">下载壁纸</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
